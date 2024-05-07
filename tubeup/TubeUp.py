@@ -288,7 +288,9 @@ class TubeUp(object):
             # youtube-dl devs
             'call_home': False,
             'logger': self.logger,
-            'progress_hooks': [ydl_progress_hook]
+            'progress_hooks': [ydl_progress_hook],
+            'merge_output_format': "mp4",
+            'check_formats': True
         }
 
         if cookie_file is not None:
